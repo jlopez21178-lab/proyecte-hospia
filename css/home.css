@@ -1,0 +1,168 @@
+:root {
+  --dark: #080f0f;
+  --light: #f8f4f9;
+  --wisteria: #bea7e4;
+  --purple: #9771d6;
+  --berry: #a13d63;
+  --dark-lighter: #080f0fa6;
+  --light-darker: #f8f4f985;
+  --purple-dark: #9871d681;
+}
+
+@font-face {
+  font-family: raleway;
+  src: url("/fonts/Raleway.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: raleway;
+}
+
+body {
+  background: var(--dark);
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+}
+/* start header style*/
+header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+}
+
+img {
+  width: 80px;
+}
+
+i {
+  font-size: 40px;
+  color: var(--light);
+}
+
+#navegacio {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--purple-dark);
+}
+
+/* end header style */
+
+/* start main style */
+
+main {
+}
+
+#hero {
+  background: color-mix(in srgb, var(--purple) 60%, var(--light) 60%);
+  color: var(--dark);
+  padding: 10%;
+  text-align: center;
+}
+
+#hero > h1 {
+  font-size: 4rem;
+}
+
+/* form */
+
+#form-container,
+#form-search,
+#form-search > label {
+  display: flex;
+}
+#form-container {
+  background-color: color-mix(in srgb, var(--purple) 80%, var(--light) 10%);
+  justify-content: center;
+  padding: 10%;
+}
+#form-search {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid color-mix(in srgb, var(--berry) 100%, var(--light) 100%);
+  border-radius: 10px;
+  background-color: color-mix(in srgb, var(--berry) 100%, var(--light) 30%);
+  padding: 20px;
+}
+#form-search > label {
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* reviews */
+
+#review-container {
+  background-color: color-mix(in srgb, var(--purple) 70%, var(--light) 40%);
+  padding: 10px;
+}
+
+.review {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+.review > div {
+  display: flex;
+}
+
+.review img {
+  background-position: center;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+}
+
+#places-container {
+  background-color: color-mix(in srgb, var(--purple) 70%, var(--dark) 60%);
+}
+#places-container .section-title > h5 {
+  color: color-mix(in srgb, var(--berry) 80%, var(--light) 20%);
+}
+
+#spain-container {
+  background-color: color-mix(in srgb, var(--purple) 70%, var(--light) 40%);
+}
+
+.section-title {
+  margin-bottom: 10px;
+}
+.section-title > h3 {
+  font-size: 1.5rem;
+}
+.section-title > h5 {
+  color: color-mix(in srgb, var(--berry) 80%, var(--dark) 20%);
+}
+/* end main style */
+
+/* start footer style */
+footer {
+  background: color-mix(in srgb, var(--light) 50%, transparent);
+  /* bottom: 0; */
+  /* inset-inline: 0; */
+  /* position: absolute; */
+}
+
+footer > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#social-media {
+  display: flex;
+}
+
+#social-media > a {
+  text-decoration: none;
+}
+
+#social-media i {
+  color: var(--wisteria);
+}
+/* end footer style */

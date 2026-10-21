@@ -1,11 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hospia</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospia</title>
+    <link
+      rel="shortcut icon"
+      href="./img/logo/hospia-small-dark.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/thin/style.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="navegacio">
+        <a href="./index.html"
+          ><img src="./img/logo/hospia-small-dark.png" alt=""
+        /></a>
+        <i class="ph ph-list"></i>
+      </nav>
+    </header>
+    <main>
+      <div id="hero">
+        <h1>Hospia</h1>
+        <h3>Reserva ya</h3>
+      </div>
+      <div id="form-container">
+        <form action="" id="form-search">
+          <label>
+            <p>Lugar</p>
+            <input type="text" name="place" id="place" />
+          </label>
+          <label>
+            <p>Fecha de entrada:</p>
+            <input type="date" name="date_in" id="date-in" />
+          </label>
+          <label>
+            <p>Fecha de salida:</p>
+            <input type="date" name="date_out" id="date-out" />
+          </label>
+          <label>
+            <p>Adultos:</p>
+            <input type="number" name="adult_number" id="adult-number" />
+          </label>
+          <label>
+            <p>Niños:</p>
+            <input type="number" name="kid_number" id="kid-number" />
+          </label>
+
+          <input type="submit" value="Buscar alojamientos" />
+        </form>
+      </div>
+
+      <section id="review-container">
+        <div class="section-title">
+          <h3>Reseñas</h3>
+          <h5>Reseñas más recientes</h5>
+        </div>
+        <article class="review">
+          <cite>"contenido reseñas"</cite>
+          <div>
+            <img src="/img/pfp.jpg" alt="" />
+            <div>
+              <p>Nombre</p>
+              <p>Estrellitas</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <div id="places-container">
+        <div class="section-title">
+          <h3>Destinos de moda</h3>
+          <h5>Descubre el mundo</h5>
+        </div>
+        <section id="carrusel-places">
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </section>
+      </div>
+      <div id="spain-container">
+        <div class="section-title">
+          <h3>Conoce España</h3>
+          <h5>Descubre lugares en España</h5>
+        </div>
+
+        <section id="carrusel-spain">
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </section>
+      </div>
+    </main>
+    <footer>
+      <nav>
+        <a href="./index.html"
+          ><img src="./img/logo/hospia-small-dark.png" alt=""
+        /></a>
+        <div id="social-media">
+          <a href="https://www.x.com"> <i class="ph ph-x-logo"></i></a>
+          <a href="https://www.instagram.com"
+            ><i class="ph ph-instagram-logo"></i>
+          </a>
+          <a href="https://www.linkdin.com"
+            ><i class="ph ph-linkedin-logo"></i>
+          </a>
+        </div>
+      </nav>
+    </footer>
+  </body>
 </html>
