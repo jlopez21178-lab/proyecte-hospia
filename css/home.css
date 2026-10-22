@@ -21,6 +21,10 @@
   font-family: raleway;
 }
 
+.hidden {
+  display: none !important;
+}
+
 body {
   background: var(--dark);
   /* height: 100%; */
@@ -31,31 +35,91 @@ body {
 header {
   position: sticky;
   top: 0;
-  backdrop-filter: blur(10px);
+  background: blur(2px);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: color-mix(in srgb, var(--purple) 70%, var(--wisteria) 20%);
 }
 
 img {
   width: 80px;
 }
 
-i {
+.full-bg-black {
+  background-color: color-mix(in srgb, var(--dark) 100%, transparent 50%);
+  backdrop-filter: blur(7px);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+}
+
+.front {
+  height: 100vh;
+  width: 100vw;
+}
+#menu-icon {
   font-size: 40px;
+  position: relative;
+  z-index: 10;
+  top: 0;
+}
+
+.ph-dark {
+  color: var(--dark);
+}
+.ph-light {
   color: var(--light);
 }
 
-#navegacio {
-  padding: 10px;
+#menu-icon,
+#menu-list li {
+  cursor: pointer;
+  list-style: none;
+  /* z-index: 20; */
+}
+
+#menu-list {
+  background-color: color-mix(in srgb, var(--light) 100%, var(--purple) 20%);
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 60vw;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* z-index: 50; */
+}
+
+#menu-list li {
+  font-size: 1.4rem;
+  padding: 20px 0;
+}
+
+#menu-list li:not(:last-child) {
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--dark) 50%, var(--light) 100%);
+}
+
+#account-button-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background: var(--purple-dark);
+}
+
+#account-button-container button {
+  /* padding: 10px; */
 }
 
 /* end header style */
 
 /* start main style */
 
-main {
+main section {
+  padding: 10px;
 }
 
 #hero {
@@ -106,6 +170,9 @@ main {
   border: 1px solid black;
   border-radius: 10px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .review > div {
   display: flex;
@@ -115,6 +182,18 @@ main {
   background-position: center;
   border-radius: 100%;
   aspect-ratio: 1/1;
+}
+
+.review > div > div {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review > div > div > p {
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 #places-container {

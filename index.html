@@ -23,11 +23,23 @@
   </head>
   <body>
     <header>
-      <nav id="navegacio">
-        <a href="./index.html"
-          ><img src="./img/logo/hospia-small-dark.png" alt=""
-        /></a>
-        <i class="ph ph-list"></i>
+      <a href="./index.html"
+        ><img src="./img/logo/hospia-small-dark.png" alt=""
+      /></a>
+      <nav>
+        <i id="menu-icon" class="ph ph-list ph-light"></i>
+        <div class="full-bg-black hidden">
+          <div id="menu-list" class="hidden">
+            <ul>
+              <li>Home</li>
+              <li>About us</li>
+            </ul>
+            <div id="account-button-container">
+              <button id="log-in">Log in</button>
+              <button id="sign-up">Sign up</button>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -68,18 +80,18 @@
           <h5>Reseñas más recientes</h5>
         </div>
         <article class="review">
-          <cite>"contenido reseñas"</cite>
+          <cite>"La mejor pagina del mundo"</cite>
           <div>
             <img src="/img/pfp.jpg" alt="" />
             <div>
               <p>Nombre</p>
-              <p>Estrellitas</p>
+              <div class="stars">Estrellitas</div>
             </div>
           </div>
         </article>
       </section>
 
-      <div id="places-container">
+      <section id="places-container">
         <div class="section-title">
           <h3>Destinos de moda</h3>
           <h5>Descubre el mundo</h5>
@@ -88,8 +100,8 @@
           <img src="" alt="" />
           <img src="" alt="" />
         </section>
-      </div>
-      <div id="spain-container">
+      </section>
+      <section id="spain-container">
         <div class="section-title">
           <h3>Conoce España</h3>
           <h5>Descubre lugares en España</h5>
@@ -99,7 +111,7 @@
           <img src="" alt="" />
           <img src="" alt="" />
         </section>
-      </div>
+      </section>
     </main>
     <footer>
       <nav>
@@ -117,5 +129,6 @@
         </div>
       </nav>
     </footer>
+    <script src="/js/global.js"></script>
   </body>
 </html>
