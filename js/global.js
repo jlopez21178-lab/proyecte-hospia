@@ -7,10 +7,8 @@ const menuList = document.getElementById("menu-list");
 const fullBg = document.getElementsByClassName("full-bg-black")[0];
 const nav = document.querySelector("header nav");
 
-
-
 menuIcon.addEventListener("click", () => {
-  classToggle(menuIcon, "ph-list", "ph-x", "ph-dark", "ph-light");
+  classToggle(menuIcon, "ph-list", "ph-x");
   menuList.classList.toggle("hidden");
   fullBg.classList.toggle("hidden");
 

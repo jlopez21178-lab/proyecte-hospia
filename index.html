@@ -20,6 +20,11 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/thin/style.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
   </head>
   <body>
     <header>
@@ -29,7 +34,7 @@
       <nav>
         <i id="menu-icon" class="ph ph-list ph-light"></i>
         <div class="full-bg-black hidden">
-          <div id="menu-list" class="hidden">
+          <div id="menu-list" class="hidden container">
             <ul>
               <li>Home</li>
               <li>About us</li>
@@ -47,8 +52,8 @@
         <h1>Hospia</h1>
         <h3>Reserva ya</h3>
       </div>
-      <div id="form-container">
-        <form action="" id="form-search">
+      <section id="form-container">
+        <form action="" id="form-search" class="container">
           <label>
             <p>Lugar</p>
             <input type="text" name="place" id="place" />
@@ -72,45 +77,87 @@
 
           <input type="submit" value="Buscar alojamientos" />
         </form>
-      </div>
+      </section>
 
       <section id="review-container">
         <div class="section-title">
           <h3>Reseñas</h3>
           <h5>Reseñas más recientes</h5>
         </div>
-        <article class="review">
+        <article class="review container">
+          <div class="stars">
+            <i class="ph-fill ph-star-four"></i>
+            <i class="ph-fill ph-star-four"></i>
+            <i class="ph-fill ph-star-four"></i>
+            <i class="ph-fill ph-star-four"></i>
+            <i class="ph-fill ph-star-four"></i>
+          </div>
           <cite>"La mejor pagina del mundo"</cite>
           <div>
             <img src="/img/pfp.jpg" alt="" />
             <div>
               <p>Nombre</p>
-              <div class="stars">Estrellitas</div>
+              <h5 class="estancia">Estancia en Menorca</h5>
+            </div>
+          </div>
+        </article>
+        <article class="review container">
+          <div class="stars">
+            <i class="ph-fill ph-star-four"></i>
+            <i class="ph-fill ph-star-four"></i>
+            <i class="ph-fill ph-star-four"></i>
+            <i class="ph-fill ph-star-four"></i>
+            <i class="ph-fill ph-star-four"></i>
+          </div>
+          <cite>"La mejor pagina del mundo"</cite>
+          <div>
+            <img src="/img/pfp.jpg" alt="" />
+            <div>
+              <p>Nombre</p>
+              <h5 class="estancia">Estancia en Menorca</h5>
+            </div>
+          </div>
+        </article>
+        <article class="review container">
+          <div class="stars">
+            <i class="ph-fill ph-star-four"></i>
+            <i class="ph-fill ph-star-four"></i>
+            <i class="ph-fill ph-star-four"></i>
+            <i class="ph-fill ph-star-four"></i>
+            <i class="ph-fill ph-star-four"></i>
+          </div>
+          <cite>"La mejor pagina del mundo"</cite>
+          <div>
+            <img src="/img/pfp.jpg" alt="" />
+            <div>
+              <p>Nombre</p>
+              <h5 class="estancia">Estancia en Menorca</h5>
             </div>
           </div>
         </article>
       </section>
 
       <section id="places-container">
-        <div class="section-title">
-          <h3>Destinos de moda</h3>
-          <h5>Descubre el mundo</h5>
+        <div>
+          <div class="section-title">
+            <h3>Destinos de moda</h3>
+            <h5>Descubre el mundo</h5>
+          </div>
+          <article id="carrusel-places"></article>
         </div>
-        <section id="carrusel-places">
-          <img src="" alt="" />
-          <img src="" alt="" />
-        </section>
       </section>
       <section id="spain-container">
-        <div class="section-title">
-          <h3>Conoce España</h3>
-          <h5>Descubre lugares en España</h5>
-        </div>
+        <div>
+          <div class="section-title">
+            <h3>Conoce España</h3>
+            <h5>Descubre lugares en España</h5>
+          </div>
 
-        <section id="carrusel-spain">
-          <img src="" alt="" />
-          <img src="" alt="" />
-        </section>
+          <article id="carrusel-spain">
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </article>
+        </div>
       </section>
     </main>
     <footer>
@@ -130,5 +177,6 @@
       </nav>
     </footer>
     <script src="/js/global.js"></script>
+    <script src="/js/carrusel.js"></script>
   </body>
 </html>
