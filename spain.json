@@ -1,0 +1,23 @@
+[
+  {
+    "img": "https://www.artiemhotels.com/uploads/10b59d73-bf6a-4977-939d-7dfa25a83fe7/10b59d73-bf6a-4977-939d-7dfa25a83fe7.jpg",
+    "ciudad": "Ciutadella",
+    "provincia": "Menorca, Illes Balears",
+    "interes": "Puerto antiguo, casco histórico y calas de aguas claras a pocos minutos.",
+    "historico": "Capital histórica de Menorca hasta 1722."
+  },
+  {
+    "img": "https://rincondelchorro.es/wp-content/uploads/2023/04/H1-QUE-VER-EN-ALBARRACIN.jpeg",
+    "ciudad": "Albarracín",
+    "provincia": "Teruel",
+    "interes": "Calles empedradas y paisajes de sierra.",
+    "historico": "Casco medieval declarado Monumento Nacional."
+  },
+  {
+    "img": "https://estaticos-cdn.prensaiberica.es/clip/ee6cd378-e074-44d8-b978-8c5450722f2d_source-aspect-ratio_default_0.jpg",
+    "ciudad": "Santillana del Mar",
+    "provincia": "Cantabria",
+    "interes": "Villa medieval cerca de la cueva de Altamira.",
+    "historico": "Conserva su trazado y casonas de piedra."
+  }
+]

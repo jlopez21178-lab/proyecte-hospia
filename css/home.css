@@ -18,6 +18,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: raleway;
+  color: var(--light);
 }
 
 .hidden {
@@ -37,7 +38,7 @@ body {
 header {
   position: sticky;
   top: 0;
-  padding: 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,17 +63,36 @@ img {
   cursor: pointer;
   list-style: none;
 }
+header > nav > div {
+  position: fixed;
+  right: 0;
+  top: 85px;
+}
 
 #menu-list {
-  position: fixed;
-
-  right: 0;
-  top: 0;
+  position: relative;
   width: 60vw;
   padding: 10%;
   display: flex;
+  border-radius: var(--border-radius);
   flex-direction: column;
   justify-content: space-between;
+
+  filter: drop-shadow(0 -1px 5px var(--wisteria));
+}
+
+#menu-list::before {
+  content: "";
+  height: 0;
+  width: 0;
+  top: -15px;
+  right: 25px;
+  position: absolute;
+  border: 20px solid color-mix(in srgb, var(--dark) 100%, var(--light) 10%);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 0px solid transparent;
+  z-index: -1;
 }
 
 #menu-list li {
@@ -109,7 +129,7 @@ img {
 
 /* start main style */
 main > section {
-  padding: 25px 50px !important;
+  padding: 25px !important;
 }
 
 #hero {
@@ -238,10 +258,24 @@ main > section {
 .section-title > h5 {
   color: var(--wisteria);
 }
+
+/* start carrusel places */
+#carrusel-container {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
 #carrusel-places {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 20px;
+  scrollbar-width: none;
+}
+
+#carrusel-places > div {
+  flex: 0 0 95%;
 }
 
 #carrusel-places div {
@@ -267,6 +301,61 @@ main > section {
 #carrusel-places > div:hover > p {
   color: var(--dark);
 }
+
+/* end carrusel places */
+
+/* start Carrusel Españita */
+#spain-container {
+  overflow: hidden;
+  margin: 0 auto;
+}
+#carrusel-spain {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 20px;
+  scrollbar-width: none;
+}
+
+#carrusel-spain div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#carrusel-spain > div {
+  flex: 0 0 95%;
+  margin: 10px;
+  padding: 20px;
+  border-radius: var(--border-radius);
+
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+#carrusel-spain > div > img {
+  width: 100%;
+  border-radius: calc(var(--border-radius) - 10px);
+  aspect-ratio: 4/3;
+}
+
+#carrusel-spain > div > div > h3 {
+  color: var(--wisteria);
+}
+
+#carrusel-spain > div > div {
+  gap: 10px;
+}
+
+.interes h3,
+.historico h3 {
+  color: var(--purple);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+/* end Carrusel Españita */
 
 /* end main style */
 
