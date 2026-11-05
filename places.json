@@ -1,14 +1,54 @@
 [
   {
-    "city": "Paris",
-    "img": "https://i.pinimg.com/1200x/2f/c5/97/2fc5977afa4a7920e9a8c58125c8ece2.jpg"
-  },
-  {
     "city": "Madrid",
-    "img": "https://i.pinimg.com/736x/5b/c6/ac/5bc6ace7ef236af53a0f9a8323a19904.jpg"
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Mayor_de_Madrid_06.jpg?width=800"
   },
   {
     "city": "Barcelona",
-    "img": "https://hips.hearstapps.com/hmg-prod/images/barcelona-city-skyline-with-sagrada-familia-royalty-free-image-1692960079.jpg?crop=0.6662xw:1xh;center,top&resize=1200:*"
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Sagrada_Familia_01.jpg?width=800"
+  },
+  {
+    "city": "Valencia",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Ciudad_de_las_Artes_y_las_Ciencias,_Valencia.jpg?width=800"
+  },
+  {
+    "city": "Granada",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra_Granada.jpg?width=800"
+  },
+  {
+    "city": "Córdoba",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Mezquita_de_Córdoba.jpg?width=800"
+  },
+  {
+    "city": "Santiago de Compostela",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Santiago_de_Compostela_Cathedral.jpg?width=800"
+  },
+  {
+    "city": "Salamanca",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Mayor_de_Salamanca.jpg?width=800"
+  },
+  {
+    "city": "Palma",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Catedral_de_Mallorca.jpg?width=800"
+  },
+  {
+    "city": "París",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Tour_Eiffel_Wikimedia_Commons.jpg?width=800"
+  },
+  {
+    "city": "Roma",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Colosseo_2020.jpg?width=800"
+  },
+  {
+    "city": "Londres",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Tower_Bridge_from_Shad_Thames.jpg?width=800"
+  },
+  {
+    "city": "Nueva York",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Statue_of_Liberty_7.jpg?width=800"
+  },
+  {
+    "city": "Ámsterdam",
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Amsterdam_Canals_-_July_2006.jpg?width=800"
   }
 ]

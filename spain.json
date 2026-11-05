@@ -1,23 +1,106 @@
 [
   {
-    "img": "https://www.artiemhotels.com/uploads/10b59d73-bf6a-4977-939d-7dfa25a83fe7/10b59d73-bf6a-4977-939d-7dfa25a83fe7.jpg",
-    "ciudad": "Ciutadella",
-    "provincia": "Menorca, Illes Balears",
-    "interes": "Puerto antiguo, casco histórico y calas de aguas claras a pocos minutos.",
-    "historico": "Capital histórica de Menorca hasta 1722."
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Mayor_de_Madrid_06.jpg?width=800",
+    "ciudad": "Madrid",
+    "provincia": "Madrid",
+    "interes": [
+      "Palacio Real",
+      "Museo del Prado",
+      "Parque del Retiro",
+      "Plaza Mayor",
+      "Puerta del Sol"
+    ],
+    "historico": "Capital de España desde 1561, cuando Felipe II trasladó allí la corte. Tiene origen en una fortaleza musulmana del siglo IX llamada Mayrit y fue escenario del levantamiento del 2 de mayo de 1808 contra la ocupación napoleónica."
   },
   {
-    "img": "https://rincondelchorro.es/wp-content/uploads/2023/04/H1-QUE-VER-EN-ALBARRACIN.jpeg",
-    "ciudad": "Albarracín",
-    "provincia": "Teruel",
-    "interes": "Calles empedradas y paisajes de sierra.",
-    "historico": "Casco medieval declarado Monumento Nacional."
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Sagrada_Familia_01.jpg?width=800",
+    "ciudad": "Barcelona",
+    "provincia": "Barcelona",
+    "interes": [
+      "Sagrada Familia",
+      "Parque Güell",
+      "Casa Batlló",
+      "Barrio Gótico",
+      "La Rambla"
+    ],
+    "historico": "Fundada como colonia romana (Barcino) en el siglo I a. C. Fue capital del condado de Barcelona en la Edad Media y centro de la Corona de Aragón. Acogió la Exposición Universal de 1888 y los Juegos Olímpicos de 1992."
   },
   {
-    "img": "https://estaticos-cdn.prensaiberica.es/clip/ee6cd378-e074-44d8-b978-8c5450722f2d_source-aspect-ratio_default_0.jpg",
-    "ciudad": "Santillana del Mar",
-    "provincia": "Cantabria",
-    "interes": "Villa medieval cerca de la cueva de Altamira.",
-    "historico": "Conserva su trazado y casonas de piedra."
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Ciudad_de_las_Artes_y_las_Ciencias,_Valencia.jpg?width=800",
+    "ciudad": "Valencia",
+    "provincia": "Valencia",
+    "interes": [
+      "Ciudad de las Artes y las Ciencias",
+      "Lonja de la Seda",
+      "Catedral de Valencia",
+      "Mercado Central",
+      "Albufera"
+    ],
+    "historico": "Fundada por los romanos en el 138 a. C. como Valentia. Fue conquistada por Jaime I de Aragón en 1238 y vivió su Siglo de Oro en el siglo XV con la construcción de la Lonja de la Seda."
+  },
+  {
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra_Granada.jpg?width=800",
+    "ciudad": "Granada",
+    "provincia": "Granada",
+    "interes": [
+      "Alhambra y Generalife",
+      "Albaicín",
+      "Catedral de Granada",
+      "Sacromonte",
+      "Capilla Real"
+    ],
+    "historico": "Capital del reino nazarí, último reducto musulmán de la península. Los Reyes Católicos la conquistaron el 2 de enero de 1492, poniendo fin a la Reconquista."
+  },
+  {
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Mezquita_de_Córdoba.jpg?width=800",
+    "ciudad": "Córdoba",
+    "provincia": "Córdoba",
+    "interes": [
+      "Mezquita-Catedral",
+      "Judería",
+      "Alcázar de los Reyes Cristianos",
+      "Puente Romano",
+      "Medina Azahara"
+    ],
+    "historico": "Capital del califato de Córdoba en el siglo X, una de las mayores ciudades de Europa en su época. La Mezquita se inició en el 785 y la ciudad fue conquistada por Fernando III en 1236."
+  },
+  {
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Santiago_de_Compostela_Cathedral.jpg?width=800",
+    "ciudad": "Santiago de Compostela",
+    "provincia": "A Coruña",
+    "interes": [
+      "Catedral de Santiago",
+      "Plaza del Obradoiro",
+      "Hostal de los Reyes Católicos",
+      "Casco histórico",
+      "Monte do Gozo"
+    ],
+    "historico": "Se desarrolló a partir del siglo IX con el hallazgo de la supuesta tumba del apóstol Santiago. Es meta del Camino de Santiago y Patrimonio de la Humanidad desde 1985."
+  },
+  {
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Mayor_de_Salamanca.jpg?width=800",
+    "ciudad": "Salamanca",
+    "provincia": "Salamanca",
+    "interes": [
+      "Plaza Mayor",
+      "Universidad de Salamanca",
+      "Catedral Vieja y Nueva",
+      "Casa de las Conchas",
+      "Puente Romano"
+    ],
+    "historico": "Su universidad, fundada en 1218, es la más antigua de España y una de las más antiguas de Europa. La ciudad vieja es Patrimonio de la Humanidad desde 1988."
+  },
+  {
+    "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Catedral_de_Mallorca.jpg?width=800",
+    "ciudad": "Palma",
+    "provincia": "Islas Baleares",
+    "interes": [
+      "Catedral de Mallorca (La Seu)",
+      "Castillo de Bellver",
+      "Palacio de la Almudaina",
+      "Casco antiguo",
+      "Paseo Marítimo"
+    ],
+    "historico": "Fundada por los romanos en el 123 a. C. como Palma. Fue conquistada por Jaime I de Aragón en 1229, tras lo cual fue capital del Reino de Mallorca."
   }
 ]

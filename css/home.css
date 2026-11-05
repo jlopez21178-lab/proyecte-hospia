@@ -384,3 +384,106 @@ footer > nav {
   font-size: 2rem;
 }
 /* end footer style */
+
+/* PC device */
+
+@media (min-width: 720px) {
+  /* start header */
+  header {
+    justify-content: center;
+    height: 15vh;
+  }
+
+  header > a {
+    position: fixed;
+  }
+
+  header > a img {
+    height: 100px;
+    width: 100px;
+  }
+
+  #menu-icon {
+    display: none;
+  }
+
+  #menu-list-container {
+    position: static;
+    width: 98vw;
+  }
+  #menu-list {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #menu-list::before {
+    display: none;
+  }
+
+  #menu-list > ul {
+    display: flex;
+    gap: 20px;
+  }
+  #menu-list > ul > li {
+    display: inline;
+    border-bottom: none !important;
+  }
+
+  #account-button-container {
+    flex-direction: row;
+  }
+  #account-button-container > button {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+  /* end header */
+
+  /* start main */
+
+  /* start formulario */
+  #form-search {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+
+    /* grid-template-areas:
+      "place place place"
+      "date-in .date-out"
+      "adult  kid reserve"; */
+  }
+
+  #form-search > label:nth-child(1) {
+    /* grid-area: place; */
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+  #form-search > label:nth-child(2) {
+    /* grid-area: date-in; */
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+  #form-search > label:nth-child(3) {
+    /* grid-area: date-out; */
+    grid-column: 3 / span 2;
+    grid-row: 2;
+  }
+  #form-search > label:nth-child(4) {
+    /* grid-area: adult; */
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+  #form-search > label:nth-child(5) {
+    /* grid-area: kid; */
+    grid-column: 3 / span 2;
+    grid-row: 3;
+  }
+
+  #form-search > input[type="submit"] {
+    /* grid-area: reserve; */
+    grid-column: 2 / span 2;
+  }
+
+  /* end formulario */
+
+  /* end main */
+}

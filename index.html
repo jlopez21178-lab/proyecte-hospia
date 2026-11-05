@@ -28,12 +28,18 @@
   </head>
   <body>
     <header>
-      <a href="./index.html"
-        ><img src="./img/logo/hospia-small-dark.png" alt=""
-      /></a>
+      <a href="./index.html">
+        <picture>
+          <source
+            media="(min-width: 720px)"
+            srcset="./img/logo/hospia-big-dark.png"
+          />
+          <img src="./img/logo/hospia-small-dark.png" alt="" />
+        </picture>
+      </a>
       <nav>
-        <i id="menu-icon" class="ph ph-list ph-light"></i>
-        <div>
+        <i id="menu-icon" class="ph ph-list"></i>
+        <div id="menu-list-container">
           <div id="menu-list" class="hidden container">
             <ul>
               <li>Home</li>
@@ -153,9 +159,7 @@
             <h5>Descubre lugares en España</h5>
           </div>
 
-          <article id="carrusel-spain">
-            
-          </article>
+          <article id="carrusel-spain"></article>
         </div>
       </section>
     </main>

@@ -4,15 +4,20 @@ function classToggle(item, ...className) {
 
 const menuIcon = document.getElementById("menu-icon");
 const menuList = document.getElementById("menu-list");
-const fullBg = document.getElementsByClassName("full-bg-black")[0];
 const nav = document.querySelector("header nav");
 
 menuIcon.addEventListener("click", () => {
   classToggle(menuIcon, "ph-list", "ph-x");
   menuList.classList.toggle("hidden");
-  fullBg.classList.toggle("hidden");
+});
 
-  // Si el bg no esta oculto que no permita desplazarse
-  if (!fullBg.classList.contains("hidden")) {
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 720) {
+    menuIcon.classList = "ph-list ph";
+    menuList.classList.remove("hidden");
+    menuList.classList.remove("container");
+  } else {
+    menuList.classList.add("hidden");
+    menuList.classList.add("container");
   }
 });
