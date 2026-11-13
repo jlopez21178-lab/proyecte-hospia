@@ -171,6 +171,10 @@ main > section {
   color: var(--wisteria);
 }
 
+#form-search > label > p {
+  margin-left: 10px;
+}
+
 #form-search input {
   border-radius: var(--border-radius);
   padding: 10px;
@@ -195,9 +199,12 @@ main > section {
 
 #review-container {
   padding: 10px;
+}
+
+#review-container > div {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .review {
@@ -394,11 +401,11 @@ footer > nav {
     height: 15vh;
   }
 
-  header > a {
+  #logo {
     position: fixed;
   }
 
-  header > a img {
+  #logo img {
     height: 100px;
     width: 100px;
   }
@@ -415,8 +422,9 @@ footer > nav {
     width: 100%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
+
   #menu-list::before {
     display: none;
   }
@@ -445,45 +453,50 @@ footer > nav {
   #form-search {
     display: grid !important;
     grid-template-columns: repeat(4, 1fr);
-
-    /* grid-template-areas:
-      "place place place"
-      "date-in .date-out"
-      "adult  kid reserve"; */
   }
 
   #form-search > label:nth-child(1) {
-    /* grid-area: place; */
     grid-column: 1 / span 4;
     grid-row: 1;
   }
   #form-search > label:nth-child(2) {
-    /* grid-area: date-in; */
     grid-column: 1 / span 2;
     grid-row: 2;
   }
   #form-search > label:nth-child(3) {
-    /* grid-area: date-out; */
     grid-column: 3 / span 2;
     grid-row: 2;
   }
   #form-search > label:nth-child(4) {
-    /* grid-area: adult; */
     grid-column: 1 / span 2;
     grid-row: 3;
   }
   #form-search > label:nth-child(5) {
-    /* grid-area: kid; */
     grid-column: 3 / span 2;
     grid-row: 3;
   }
 
   #form-search > input[type="submit"] {
-    /* grid-area: reserve; */
     grid-column: 2 / span 2;
   }
 
   /* end formulario */
+
+  /* start reviews */
+
+  #review-container > div:nth-child(2) {
+    flex-direction: row;
+  }
+
+  /* end reviews */
+
+  /* start places */
+
+  #carrusel-places > img {
+    height: 100px !important;
+  }
+
+  /* end places */
 
   /* end main */
 }

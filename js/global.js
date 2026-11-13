@@ -6,6 +6,13 @@ const menuIcon = document.getElementById("menu-icon");
 const menuList = document.getElementById("menu-list");
 const nav = document.querySelector("header nav");
 
+window.addEventListener("load", () => {
+  if (window.innerWidth < 720) {
+    menuList.classList.add("hidden");
+    menuList.classList.add("container");
+  }
+});
+
 menuIcon.addEventListener("click", () => {
   classToggle(menuIcon, "ph-list", "ph-x");
   menuList.classList.toggle("hidden");

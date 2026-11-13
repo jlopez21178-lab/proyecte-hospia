@@ -28,7 +28,7 @@
   </head>
   <body>
     <header>
-      <a href="./index.html">
+      <a id="logo" href="./index.html">
         <picture>
           <source
             media="(min-width: 720px)"
@@ -40,7 +40,7 @@
       <nav>
         <i id="menu-icon" class="ph ph-list"></i>
         <div id="menu-list-container">
-          <div id="menu-list" class="hidden container">
+          <div id="menu-list">
             <ul>
               <li>Home</li>
               <li>About us</li>
@@ -90,57 +90,59 @@
           <h3>Reseñas</h3>
           <h5>Reseñas más recientes</h5>
         </div>
-        <article class="review container">
-          <div class="stars">
-            <i class="ph-fill ph-star-four"></i>
-            <i class="ph-fill ph-star-four"></i>
-            <i class="ph-fill ph-star-four"></i>
-            <i class="ph-fill ph-star-four"></i>
-            <i class="ph-fill ph-star-four"></i>
-          </div>
-          <cite>"La mejor pagina del mundo"</cite>
-          <div>
-            <img src="/img/pfp.jpg" alt="" />
-            <div>
-              <p>Nombre</p>
-              <h5 class="estancia">Estancia en Menorca</h5>
+        <div>
+          <article class="review container">
+            <div class="stars">
+              <i class="ph-fill ph-star-four"></i>
+              <i class="ph-fill ph-star-four"></i>
+              <i class="ph-fill ph-star-four"></i>
+              <i class="ph-fill ph-star-four"></i>
+              <i class="ph-fill ph-star-four"></i>
             </div>
-          </div>
-        </article>
-        <article class="review container">
-          <div class="stars">
-            <i class="ph-fill ph-star-four"></i>
-            <i class="ph-fill ph-star-four"></i>
-            <i class="ph-fill ph-star-four"></i>
-            <i class="ph-fill ph-star-four"></i>
-            <i class="ph-fill ph-star-four"></i>
-          </div>
-          <cite>"La mejor pagina del mundo"</cite>
-          <div>
-            <img src="/img/pfp.jpg" alt="" />
+            <cite>"La mejor pagina del mundo"</cite>
             <div>
-              <p>Nombre</p>
-              <h5 class="estancia">Estancia en Menorca</h5>
+              <img src="/img/pfp.jpg" alt="" />
+              <div>
+                <p>Nombre</p>
+                <h5 class="estancia">Estancia en Menorca</h5>
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="review container">
-          <div class="stars">
-            <i class="ph-fill ph-star-four"></i>
-            <i class="ph-fill ph-star-four"></i>
-            <i class="ph-fill ph-star-four"></i>
-            <i class="ph-fill ph-star-four"></i>
-            <i class="ph-fill ph-star-four"></i>
-          </div>
-          <cite>"La mejor pagina del mundo"</cite>
-          <div>
-            <img src="/img/pfp.jpg" alt="" />
+          </article>
+          <article class="review container">
+            <div class="stars">
+              <i class="ph-fill ph-star-four"></i>
+              <i class="ph-fill ph-star-four"></i>
+              <i class="ph-fill ph-star-four"></i>
+              <i class="ph-fill ph-star-four"></i>
+              <i class="ph-fill ph-star-four"></i>
+            </div>
+            <cite>"La mejor pagina del mundo"</cite>
             <div>
-              <p>Nombre</p>
-              <h5 class="estancia">Estancia en Menorca</h5>
+              <img src="/img/pfp.jpg" alt="" />
+              <div>
+                <p>Nombre</p>
+                <h5 class="estancia">Estancia en Menorca</h5>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+          <article class="review container">
+            <div class="stars">
+              <i class="ph-fill ph-star-four"></i>
+              <i class="ph-fill ph-star-four"></i>
+              <i class="ph-fill ph-star-four"></i>
+              <i class="ph-fill ph-star-four"></i>
+              <i class="ph-fill ph-star-four"></i>
+            </div>
+            <cite>"La mejor pagina del mundo"</cite>
+            <div>
+              <img src="/img/pfp.jpg" alt="" />
+              <div>
+                <p>Nombre</p>
+                <h5 class="estancia">Estancia en Menorca</h5>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section id="places-container">
@@ -149,7 +151,9 @@
             <h3>Destinos de moda</h3>
             <h5>Descubre el mundo</h5>
           </div>
-          <article id="carrusel-places"></article>
+          <article id="carrusel-places">
+            <!-- the form of the places is like: -->
+          </article>
         </div>
       </section>
       <section id="spain-container">
