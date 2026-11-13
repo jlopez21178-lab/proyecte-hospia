@@ -112,6 +112,10 @@ header > nav > div {
 #account-button-container > button {
   padding: 5px;
   border-radius: var(--border-radius);
+  cursor: pointer;
+}
+#account-button-container > button:hover {
+  opacity: 0.8;
 }
 
 #account-button-container button:first-child {
@@ -265,6 +269,16 @@ main > section {
 }
 
 /* start carrusel places */
+
+.seleccionado {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  cursor: grabbing;
+}
+
 #carrusel-container {
   overflow: hidden;
   margin: 0 auto;
@@ -274,7 +288,6 @@ main > section {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
   gap: 20px;
   scrollbar-width: none;
 }
@@ -316,7 +329,6 @@ main > section {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
   gap: 20px;
   scrollbar-width: none;
 }
@@ -344,6 +356,9 @@ main > section {
   width: 100%;
   border-radius: calc(var(--border-radius) - 10px);
   aspect-ratio: 4/3;
+
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
 
 #carrusel-spain > div > div > h3 {
@@ -422,6 +437,8 @@ footer > nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    filter: none;
   }
 
   #menu-list::before {
@@ -492,29 +509,50 @@ footer > nav {
   /* start places */
 
   #carrusel-places > img {
-    height: 100px !important;
+    height: 100px;
   }
 
   /* end places */
 
   /* start spain carrusel */
-  .highlighted-place {
-    display: flex;
-    justify-content: center;
-  }
-
-  .highlighted-place > div{
+  #spain-container {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .highlighted-place {
+    display: flex;
     justify-content: space-between;
+    gap: 5%;
+  }
+
+  .highlighted-place .tag {
+    background-color: color-mix(in srgb, var(--purple) 100%, transparent 100%);
+    width: fit-content;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--purple);
+    font-size: 0.7rem;
+  }
+  .highlighted-place > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-basis: 35%;
+    gap: 5%;
   }
 
   .highlighted-place img {
     aspect-ratio: 5/3;
-    width: 50vw;
+    border-radius: var(--border-radius);
+    flex-grow: 1;
+  }
+
+  #carrusel-spain > div {
+    flex-basis: 70%;
   }
   /* end spain carrusel */
->>>>>>> c81b56705cb8444e8c9dbc5877fcb45f57d428f0
 
   /* end main */
 }
