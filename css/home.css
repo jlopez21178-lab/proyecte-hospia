@@ -5,6 +5,7 @@
   --purple: #9771d6;
   --berry: #a13d63;
 
+  --c-container: color-mix(in srgb, var(--dark) 100%, var(--light) 5%);
   --border-radius: 20px;
 }
 
@@ -27,7 +28,7 @@
 
 .container {
   box-shadow: 0 0 5px var(--wisteria);
-  background-color: color-mix(in srgb, var(--dark) 100%, var(--light) 10%);
+  background-color: var(--c-container);
 }
 
 body {
@@ -83,16 +84,13 @@ header > nav > div {
 
 #menu-list::before {
   content: "";
-  height: 0;
-  width: 0;
+  position: absolute;
   top: -15px;
   right: 25px;
-  position: absolute;
-  border: 20px solid color-mix(in srgb, var(--dark) 100%, var(--light) 10%);
+  border: 20px solid var(--c-container);
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-top: 0px solid transparent;
-  z-index: -1;
 }
 
 #menu-list li {
@@ -281,14 +279,12 @@ main > section {
   scrollbar-width: none;
 }
 
-#carrusel-places > div {
-  flex: 0 0 95%;
-}
-
 #carrusel-places div {
+  flex: 0 0 auto;
   border-radius: var(--border-radius);
   display: flex;
   aspect-ratio: 4/3;
+  height: 400px;
   background-size: cover !important;
   background-position: center !important;
   align-items: end;
@@ -341,6 +337,9 @@ main > section {
   font-size: 0.9rem;
 }
 
+.highlighted-place {
+  display: none;
+}
 #carrusel-spain > div > img {
   width: 100%;
   border-radius: calc(var(--border-radius) - 10px);
@@ -497,6 +496,25 @@ footer > nav {
   }
 
   /* end places */
+
+  /* start spain carrusel */
+  .highlighted-place {
+    display: flex;
+    justify-content: center;
+  }
+
+  .highlighted-place > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .highlighted-place img {
+    aspect-ratio: 5/3;
+    width: 50vw;
+  }
+  /* end spain carrusel */
+>>>>>>> c81b56705cb8444e8c9dbc5877fcb45f57d428f0
 
   /* end main */
 }
